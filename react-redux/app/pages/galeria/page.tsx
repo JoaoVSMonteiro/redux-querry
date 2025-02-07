@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface Character {
@@ -38,7 +39,7 @@ export default function Galeria() {
             key={character.id}
             className="border p-2 rounded-lg shadow-md max-w-[180px] mx-auto"
           >
-            <img
+            <Image
               src={character.image}
               alt={character.name}
               className="w-full h-[150px] object-cover rounded"

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useGetCharactersQuery } from "../../redux/apiSlice";
 
 export default function ReduxPage() {
@@ -31,7 +32,7 @@ export default function ReduxPage() {
             key={character.id}
             className="border p-2 rounded-lg shadow-md w-[150px]"
           >
-            <img
+            <Image
               src={character.image}
               alt={character.name}
               className="w-full h-[120px] object-cover rounded"
